@@ -1,0 +1,19 @@
+import java.util.*;
+public class word {
+	public static void main(String args[])
+	{
+		Scanner in=new Scanner(System.in);
+		System.out.println("enter the word tobe reversed");
+		while(true)
+		{
+			String s=in.next();
+			int l=s.length();
+			for(int i=l-1;i>=0;i--)
+			{
+				System.out.print(s.charAt(i));
+			}
+			System.out.print(" ");
+		}
+	}
+
+}
