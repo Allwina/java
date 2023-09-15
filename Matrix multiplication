@@ -1,6 +1,5 @@
 import java.util.*;
 public class MatrixMultiplication {
-
 	public static void main(String[] args) {
 		Scanner in=new Scanner(System.in);
 		// TODO Auto-generated method stub
@@ -61,14 +60,7 @@ public class MatrixMultiplication {
       	  System.out.println( );
         }
 	}
-
-
-
 	}
-
-
-
-
 	}
 
 
