@@ -1,0 +1,76 @@
+package myjava;
+import java.util.*;
+public class MatrixMultiplication {
+
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		// TODO Auto-generated method stub
+		int r,c,m,n,i,j,k;
+        System.out.println("Enter the number of rows of matrix 1");
+        r=in.nextInt();
+        System.out.println("Enter the number of columns of matrix 1");
+        c=in.nextInt();
+        System.out.println("Enter the number of rows of matrix 2");
+        m=in.nextInt();
+        System.out.println("Enter the number of columns of matrix 2");
+        n=in.nextInt();
+        int a[][]=new int[r][c];
+        int b[][]=new int[m][n];
+        int mat[][]=new int[r][n];
+        if(c!=m) {
+        	System.out.println("can't be multiplied");
+        }
+        else
+        {
+        for(i=0;i<r;i++)
+        {
+      	  for(j=0;j<c;j++)
+      	  {
+      		  System.out.println("enter the elements of 1 matrix");
+      		  a[i][j]=in.nextInt();
+      		  
+      	  }
+        }
+        for(i=0;i<m;i++)
+        {
+      	  for(j=0;j<n;j++)
+      	  {
+      		  System.out.println("enter the elements of 2 matrix");
+      		  b[i][j]=in.nextInt();
+      		  
+      	  }
+        }
+        for(i=0;i<r;i++)
+        {
+      	  for(j=0;j<n;j++)
+      	  {
+      		  mat[i][j]=0;
+      		  for(k=0;k<m;k++)
+      		  {
+      		 mat[i][j]=mat[i][j]+a[i][k]*b[k][j];
+      		  
+      	  }
+        }
+        }
+        System.out.println("The multiplication of matrix ");
+        for(i=0;i<r;i++)
+        {
+      	  for(j=0;j<n;j++)
+      	  {
+      		  
+      		 System.out.print(mat[i][j]+" \t");
+      	  }
+      	  System.out.println( );
+        }
+	}
+
+
+
+	}
+
+
+
+
+	}
+
+
